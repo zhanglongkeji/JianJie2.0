@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+    <com.zlkj.jianjie.myview.MyListView
+        android:id="@+id/znpp_sqqk_mylistview"
+        android:layout_width="140dip"
+        android:layout_height="wrap_content"
+        android:listSelector="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:dividerHeight="@null"
+        android:layout_gravity="center_horizontal"
+
+        ></com.zlkj.jianjie.myview.MyListView>
+
+</LinearLayout>

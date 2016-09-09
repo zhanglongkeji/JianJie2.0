@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwitchButton">
+        <attr name="bmWidth" format="dimension"></attr>
+        <attr name="bmHeight" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="ADTextView">
+        <!--文字进入与消失的时间-->
+        <attr name="ad_text_view_speed" format="integer"/>
+
+        <!--文字停留在中心的时间-->
+        <attr name="ad_text_view_interval" format="integer"/>
+
+        <!--前缀文字颜色-->
+        <attr name="ad_text_front_color" format="color"/>
+        <!--前缀文字大小-->
+        <attr name="ad_text_front_size" format="dimension"/>
+
+        <!--内容文字颜色-->
+        <attr name="ad_text_content_color" format="color"/>
+        <!--内容文字大小-->
+        <attr name="ad_text_content_size" format="dimension"/>
+    </declare-styleable>
+
+
+    <!-- 下拉列表-->
+    <declare-styleable name="DropDownMenu">
+        <attr name="ddunderlineColor" format="color"/>
+        <attr name="dddividerColor" format="color"/>
+        <attr name="ddtextSelectedColor" format="color"/>
+        <attr name="ddtextUnselectedColor" format="color"/>
+        <attr name="ddmenuBackgroundColor" format="color"/>
+        <attr name="ddmaskColor" format="color"/>
+        <attr name="ddmenuTextSize" format="dimension"/>
+        <attr name="ddmenuSelectedIcon" format="reference"/>
+        <attr name="ddmenuUnselectedIcon" format="reference"/>
+    </declare-styleable>
+
+
+
+</resources>

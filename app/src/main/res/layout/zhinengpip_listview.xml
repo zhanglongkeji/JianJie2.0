@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="12dip"
+            android:layout_height="12dip"
+            android:src="@mipmap/homepage_listitem_djs"
+            android:layout_marginLeft="15dip"
+            android:layout_marginTop="1dip"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/homepage_list_relayout"
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/home_list_image"
+                    android:layout_width="46dip"
+                    android:layout_height="46dip"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dip"
+                    android:src="@mipmap/find_xinjindou"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="8dip"
+                    android:weightSum="3"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="10dip"
+                    android:layout_marginTop="10dip"
+                    android:layout_marginBottom="10dip"
+                    >
+
+                    <TextView
+                        android:id="@+id/home_list_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/text_blanck_color"
+                        android:textSize="@dimen/textSize14sp"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:text="宜人贷"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_alignParentLeft="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="申请人数:"
+                                android:textColor="@color/text_gray_color"
+                                android:textSize="@dimen/textSize12sp"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                />
+                            <TextView
+                                android:id="@+id/home_list_shenqnums"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/text_yellow_home_color"
+                                android:textSize="@dimen/textSize12sp"
+                                android:layout_marginLeft="5dip"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                />
+
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_alignParentRight="true"
+                            >
+                            <TextView
+                                android:id="@+id/home_list_dateli"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:textSize="@dimen/textSize12sp"
+                                android:textColor="@color/text_blue_color"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:layout_centerVertical="true"
+                                />
+
+                            <TextView
+                                android:id="@+id/home_list_dateli2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="/月"
+                                android:textSize="@dimen/textSize11sp"
+                                android:textColor="@color/text_gray_home_color"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                android:layout_centerVertical="true"
+                                />
+
+
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            >
+                            <TextView
+                                android:id="@+id/homepage_list_tagtext"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="信用卡代还"
+                                android:textColor="@color/text_yellow_home_color"
+                                android:textSize="@dimen/textSize12sp"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@mipmap/homepage_listitem_djs"
+                                android:layout_marginLeft="8dip"
+                                />
+
+                            <TextView
+                                android:id="@+id/homepage_list_onedatatime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1天放款"
+                                android:textColor="@color/text_gray_home_color"
+                                android:textSize="@dimen/textSize12sp"
+                                android:layout_marginLeft="3dip"
+                                />
+
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_centerVertical="true"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="可贷"
+                                android:textColor="@color/text_gray_home_color"
+                                android:textSize="@dimen/textSize12sp"
+                                android:layout_marginLeft="3dip"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                />
+
+                            <TextView
+                                android:id="@+id/homepage_listview_kdje"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0-0"
+                                android:textSize="@dimen/textSize12sp"
+                                android:textColor="@color/text_blue_color"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="元"
+                                android:textColor="@color/text_gray_home_color"
+                                android:textSize="@dimen/textSize11sp"
+                                android:layout_marginLeft="3dip"
+                                android:layout_gravity="center_vertical"
+                                android:gravity="center_vertical"
+                                />
+
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dip"
+                android:background="@color/text_gray_color"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

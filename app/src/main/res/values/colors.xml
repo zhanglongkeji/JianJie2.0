@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="mask_color">#00FFFFFF</color>
+    <color name="drop_down_selected">#7B1FA2</color>
+    <color name="drop_down_unselected">#111111</color>
+    <color name="check_bg">#f2f2f2</color>
+    <color name="un_press_color">#9C27B0</color>
+
+    <color name="bg">#efefef</color>
+
+
+    <!-- 字体的颜色 浅灰色 -->
+    <color name="text_gray_home_color">#666666</color>
+
+
+    <!-- 字体的颜色 黄色-->
+    <color name="text_yellow_home_color">#FFA810</color>
+
+
+    <!-- 字体的颜色 浅灰色 -->
+    <color name="text_gray_color">#999999</color>
+
+    <!-- 字体的颜色 黑色 -->
+    <color name="text_blanck_color">#202020</color>
+
+    <!-- 字体的颜色 蓝色 -->
+    <color name="text_blue_color">#31b2ee</color>
+
+
+    <!-- 字体的颜色 红色 -->
+    <color name="text_red_color">#fd2828</color>
+
+    <!-- 字体的颜色 淡红色 -->
+    <color name="text_danred_color">#ff585f</color>
+
+
+    <!-- 分割线颜色 -->
+    <color name="fengexian_color">#efefef</color>
+
+
+
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffffff</color>
+
+    <!-- 黑色以及半透明黑色颜色 -->
+    <color name="text_black">#000000</color>
+    <color name="text_black_alpha1">#B0000000</color>
+    <color name="text_black_alpha2">#90000000</color>
+    <color name="text_black_alpha3">#70000000</color>
+    <color name="text_black_alpha4">#50000000</color>
+    <color name="text_black_alpha5">#30000000</color>
+    <color name="text_black_alpha6">#10000000</color>
+    <!-- 全透明色 -->
+    <color name="All_transparent">#00FFFFFF</color>
+
+
+</resources>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <include layout="@layout/my_actionbar"></include>
+
+    <com.zlkj.jianjie.myview.PullToRefreshView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <com.zlkj.jianjie.myview.Myviewpagers
+                    android:layout_width="match_parent"
+                    android:layout_height="180dip"
+                    android:background="@color/bg"
+                    ></com.zlkj.jianjie.myview.Myviewpagers>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dip"
+                    android:orientation="horizontal"
+                    android:background="@color/text_black_alpha3"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/myhome_page_laba"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="11dip"
+
+                        />
+
+                    <com.zlkj.jianjie.myview.ADTextView
+                        android:id="@+id/myhome_fragment_scrolltextview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:alpha="0.7"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="8dip"
+                        app:ad_text_content_size="12sp"
+                        app:ad_text_front_size="12sp"
+                        app:ad_text_view_interval="2000"
+                        app:ad_text_view_speed="3"
+                        android:textColor="#404040"
+                        android:layout_gravity="center_vertical"
+
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dip"
+                    android:weightSum="4"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginRight="10dip"
+                    >
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="48dip"
+                            android:layout_height="48dip"
+                            android:src="@mipmap/find_xinjindou"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize12sp"
+                            android:text="输入金额"
+                            android:layout_marginTop="7dip"
+                            android:textColor="@color/text_blanck_color"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/homepage_znpp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="48dip"
+                            android:layout_height="48dip"
+                            android:src="@mipmap/find_xinjindou"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize12sp"
+                            android:text="智能匹配"
+                            android:layout_marginTop="7dip"
+                            android:textColor="@color/text_blanck_color"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="48dip"
+                            android:layout_height="48dip"
+                            android:src="@mipmap/find_xinjindou"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize12sp"
+                            android:text="填写资料"
+                            android:layout_marginTop="7dip"
+                            android:textColor="@color/text_blanck_color"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        >
+
+                        <ImageView
+                            android:layout_width="48dip"
+                            android:layout_height="48dip"
+                            android:src="@mipmap/find_xinjindou"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/textSize12sp"
+                            android:text="审批放款"
+                            android:layout_marginTop="7dip"
+                            android:textColor="@color/text_blanck_color"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:background="@color/bg"
+                    ></View>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:layout_marginTop="15dip"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/yuanjiao_blue"
+                        android:paddingLeft="14dip"
+                        android:paddingRight="5dip"
+                        android:paddingTop="2dip"
+                        android:paddingBottom="1dip"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:hint="请输入借款金额（元）"
+                        android:textSize="@dimen/textSize13sp"
+
+                        />
+
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="15dip"
+                    android:background="@drawable/yuanjiao_blue"
+                    android:text="申请借款"
+                    android:textSize="@dimen/textSize14sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="12dip"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已成功帮助"
+                        android:textSize="@dimen/textSize12sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_blanck_color"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6666666"
+                        android:textSize="@dimen/textSize12sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_blue_color"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="人完成借款"
+                        android:textSize="@dimen/textSize12sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_blanck_color"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dip"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="累计金额"
+                        android:textSize="@dimen/textSize12sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_blanck_color"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="123,145,1222"
+                        android:textSize="@dimen/textSize12sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_danred_color"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textSize="@dimen/textSize12sp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/text_blanck_color"
+                        />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.zlkj.jianjie.myview.PullToRefreshView>
+
+</LinearLayout>
