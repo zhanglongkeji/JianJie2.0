@@ -74,6 +74,8 @@ public class TiXianFragment extends BaseFragment {
 
         showzfbDialog();
 
+
+
     }
 
 
@@ -82,7 +84,9 @@ public class TiXianFragment extends BaseFragment {
 
         View zfbView= LayoutInflater.from(mContext).inflate(R.layout.mydialong_tixian,null);
         txzfbdialog=AppUtil.newDialong(mContext,zfbView,R.style.tigerDialog);
+
         txzfbdialog.show();
+
 
 
     }
