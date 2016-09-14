@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--
+       描边 stroke
+       填充 solid
+      渐变   gradient
+     圆角 corners
+      间隔 padding
+    -->
+
+    <!-- 是否按下，如一个按钮触摸或者点击-->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:radius="5dp" />
+            <stroke android:width="1dp" android:color="@color/text_blue_color" />
+        </shape>
+    </item>
+
+
+    <!-- 被选中，它与focus state并不完全一样，如一个list view 被选中的时候，它里面的各个子组件可能通过方向键，被选中了。-->
+    <item android:state_selected="true">
+
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:radius="5dp" />
+            <stroke android:width="1dp" android:color="@color/text_blue_color" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/white" />
+            <corners android:radius="5dp" />
+            <stroke android:width="1dp" android:color="@color/text_gray_color" />
+        </shape>
+    </item>
+
+</selector>

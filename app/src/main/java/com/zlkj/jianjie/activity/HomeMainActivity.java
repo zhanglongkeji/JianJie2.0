@@ -3,6 +3,7 @@ package com.zlkj.jianjie.activity;
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.widget.RadioButton;
 
 import com.zlkj.jianjie.R;
 import com.zlkj.jianjie.base.BaseActivity;
@@ -12,6 +13,7 @@ import com.zlkj.jianjie.fragment.LunTanFragment;
 import com.zlkj.jianjie.fragment.PersonalFragment;
 import com.zlkj.jianjie.fragment.XinYongkaFragment;
 
+import butterknife.Bind;
 import butterknife.OnClick;
 
 /**
@@ -34,7 +36,8 @@ public class HomeMainActivity  extends BaseActivity{
     private PersonalFragment personalFragment;
     private XinYongkaFragment xinYongkaFragment;
 
-
+    @Bind(R.id.main_tabbar_homepage)
+    RadioButton radionone;
 
 
     @Override
@@ -48,6 +51,7 @@ public class HomeMainActivity  extends BaseActivity{
         fragmentManager = getSupportFragmentManager();
 
 
+        radionone.setChecked(true);
         showHomeMainFragment();
 
     }

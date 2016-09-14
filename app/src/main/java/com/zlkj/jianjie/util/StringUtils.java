@@ -569,7 +569,7 @@ public class StringUtils
      */
     public static boolean checkPhoneNum(String phoneNum)
     {
-        final String regx = "^((13[0-9])|(15[^4,\\D])|(18[0-9]))\\d{8}$";
+        final String regx = "^13[\\d]{9}$|^14[5,7]{1}\\d{8}$|^15[^4]{1}\\d{8}$|^17[0,6,7,8]{1}\\d{8}$|^18[\\d]{9}$";
 
         Pattern p = Pattern.compile(regx);
         Matcher m = p.matcher(phoneNum);

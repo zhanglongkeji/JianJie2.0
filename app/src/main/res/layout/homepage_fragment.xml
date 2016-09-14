@@ -9,11 +9,6 @@
 
     <include layout="@layout/my_actionbar"></include>
 
-    <com.zlkj.jianjie.myview.PullToRefreshView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        >
 
         <ScrollView
             android:layout_width="match_parent"
@@ -25,11 +20,37 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical"
                 >
-                <com.zlkj.jianjie.myview.Myviewpagers
+
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="180dip"
-                    android:background="@color/bg"
-                    ></com.zlkj.jianjie.myview.Myviewpagers>
+                    android:layout_height="180dip">
+
+                    <com.zlkj.jianjie.myview.Myviewpagers
+                        android:id="@+id/homepage_mylistviewpage"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dip"
+                        android:background="@color/bg"
+                        ></com.zlkj.jianjie.myview.Myviewpagers>
+                    <LinearLayout
+                        android:id="@+id/ll_bottomNavPoint"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dip"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:background="@color/All_transparent"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/ll_focus_indicator_container"
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:orientation="horizontal" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -202,6 +223,7 @@
                     android:layout_marginTop="15dip"
                     >
                     <EditText
+                        android:id="@+id/homepage_jkmoney_edittext"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/yuanjiao_blue"
@@ -222,6 +244,7 @@
 
 
                 <TextView
+                    android:id="@+id/homepage_shenqignjiek"
                     android:layout_width="match_parent"
                     android:layout_height="45dip"
                     android:layout_marginLeft="15dip"
@@ -315,11 +338,10 @@
                 </LinearLayout>
 
 
-
             </LinearLayout>
 
         </ScrollView>
 
-    </com.zlkj.jianjie.myview.PullToRefreshView>
+
 
 </LinearLayout>

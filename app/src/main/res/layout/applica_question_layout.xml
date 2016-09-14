@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+    >
+
+<include layout="@layout/my_actionbar"></include>
+
+<RelativeLayout
+    android:id="@+id/applican_question_count_relayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/applicaqustion_mytouming"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/my_touming_ceng"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        />
+
+
+    <TextView
+        android:id="@+id/applican_question_btnok"
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:background="@drawable/yuanjiao_blue_scrol"
+        android:layout_marginTop="10dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginBottom="10dip"
+        android:text="提交"
+        android:textSize="@dimen/textSize15sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:layout_above="@id/applican_question_btnok"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:visibility="visible"
+                >
+                <TextView
+                    android:id="@+id/applican_question_tex1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="职业身份"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_gray_color"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dip"
+                    android:layout_centerVertical="true"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/applican_question_onclick1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/applican_question_tex1"
+                    android:gravity="center|right"
+                    >
+                    <TextView
+                        android:id="@+id/applican_question_text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="请选择"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center|right"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="8dip"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_down"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_0.5"
+                android:background="@color/fengexian_color"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                ></View>
+
+            <!-- 显示不同的区域 开始-->
+
+            <!-- 上班族 -->
+            <LinearLayout
+                android:id="@+id/applican_question_sbz_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dip"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    >
+
+                    <TextView
+                        android:id="@+id/applican_question_tex10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工资发放形式"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dip"
+                        android:layout_centerVertical="true"
+
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/applican_question_onclick10"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/addmyinfo_tex10"
+                        android:gravity="center|right"
+                        >
+                        <TextView
+                            android:id="@+id/applican_question_text10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="请选择"
+                            android:textSize="@dimen/textSize12sp"
+                            android:textColor="@color/text_gray_color"
+                            android:gravity="center|right"
+                            android:paddingLeft="15dip"
+                            android:paddingRight="8dip"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_down"
+                            android:layout_gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_0.5"
+                    android:background="@color/fengexian_color"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    ></View>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/applican_question_tex11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="银行卡发放工资/月"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dip"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/applican_question_yuans_text11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/text_gray_color"
+                        android:textSize="@dimen/textSize12sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/applican_question_onclick_text11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="请选择"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center|right"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="8dip"
+                        android:layout_toRightOf="@id/applican_question_tex11"
+                        android:layout_toLeftOf="@id/applican_question_yuans_text11"
+                        />
+
+
+                </RelativeLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_0.5"
+                    android:background="@color/fengexian_color"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    ></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/applican_question_tex12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前单位工龄"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dip"
+                        android:layout_centerVertical="true"
+
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/applican_question_onclick12"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/addmyinfo_tex12"
+                        android:gravity="center|right"
+                        >
+                        <TextView
+                            android:id="@+id/applican_question_onclick_text12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="请选择"
+                            android:textSize="@dimen/textSize12sp"
+                            android:textColor="@color/text_gray_color"
+                            android:gravity="center|right"
+                            android:paddingLeft="15dip"
+                            android:paddingRight="8dip"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_down"
+                            android:layout_gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <!-- 上班族 结束 -->
+
+            <!-- 个体户 -->
+            <LinearLayout
+                android:id="@+id/applican_question_gth_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dip"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    >
+
+                    <TextView
+                        android:id="@+id/applican_question_onclick_yuan13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="万元"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/text_gray_color"
+                        android:textSize="@dimen/textSize12sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/applican_question_tex13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总经营流水/月"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dip"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/applican_question_onclick_text13"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="请输入"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center|right"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="8dip"
+                        android:layout_toRightOf="@id/applican_question_tex13"
+                        android:layout_toLeftOf="@id/applican_question_onclick_yuan13"
+                        android:inputType="number"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_0.5"
+                    android:background="@color/fengexian_color"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    ></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    >
+
+                    <TextView
+                        android:id="@+id/applican_question_onclick_yuan14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="万元"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/text_gray_color"
+                        android:textSize="@dimen/textSize12sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <TextView
+                        android:id="@+id/applican_question_tex14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="现金结算经营收入/月"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dip"
+                        android:layout_centerVertical="true"
+                        />
+
+
+                    <EditText
+                        android:id="@+id/applican_question_onclick_text14"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="请输入"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center|right"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="8dip"
+                        android:layout_toRightOf="@id/applican_question_tex14"
+                        android:layout_toLeftOf="@id/applican_question_onclick_yuan14"
+                        android:inputType="number"
+                        />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_0.5"
+                    android:background="@color/fengexian_color"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    ></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    >
+
+                    <TextView
+                        android:id="@+id/applican_question_tex15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="经营年限"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dip"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/applican_question_onclick15"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/addmyinfo_tex15"
+                        android:gravity="center|right"
+                        >
+                        <TextView
+                            android:id="@+id/applican_question_onclick_text15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="请选择"
+                            android:textSize="@dimen/textSize12sp"
+                            android:textColor="@color/text_gray_color"
+                            android:gravity="center|right"
+                            android:paddingLeft="15dip"
+                            android:paddingRight="8dip"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_down"
+                            android:layout_gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_0.5"
+                    android:background="@color/fengexian_color"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    ></View>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    >
+
+                    <TextView
+                        android:id="@+id/applican_question_tex16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="是否经办过营业执照"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="4dip"
+                        android:layout_centerVertical="true"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/applican_question_onclick16"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/addmyinfo_tex16"
+                        android:gravity="center|right"
+                        >
+                        <TextView
+                            android:id="@+id/applican_question_onclick_text16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="请选择"
+                            android:textSize="@dimen/textSize12sp"
+                            android:textColor="@color/text_gray_color"
+                            android:gravity="center|right"
+                            android:paddingLeft="15dip"
+                            android:paddingRight="8dip"
+                            />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/ic_down"
+                            android:layout_gravity="center_vertical"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <!-- 个体户结束-->
+
+
+            <!-- 无固定职业 -->
+            <RelativeLayout
+                android:id="@+id/applican_question_wgdzy_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="15dip"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/applican_question_onclick_yuan17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="元"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/text_gray_color"
+                    android:textSize="@dimen/textSize12sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/applican_question_tex17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="现金收入/月"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_gray_color"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dip"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:id="@+id/applican_question_onclick_text17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="请输入"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_gray_color"
+                    android:gravity="center|right"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="8dip"
+                    android:layout_toRightOf="@id/applican_question_tex17"
+                    android:layout_toLeftOf="@id/applican_question_onclick_yuan17"
+                    android:inputType="number"
+                    />
+
+            </RelativeLayout>
+            <!-- 无固定职业 结束-->
+
+
+
+
+            <!-- 显示不同的区域 结束-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:visibility="visible"
+                >
+                <TextView
+                    android:id="@+id/applican_question_tex2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="是否有本地公积金"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_gray_color"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dip"
+                    android:layout_centerVertical="true"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/applican_question_onclick2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/applican_question_tex2"
+                    android:gravity="center|right"
+                    >
+                    <TextView
+                        android:id="@+id/applican_question_text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="请选择"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center|right"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="8dip"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_down"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_0.5"
+                android:background="@color/fengexian_color"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                ></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:visibility="visible"
+                >
+                <TextView
+                    android:id="@+id/applican_question_tex3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="是否有本地社保"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_gray_color"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dip"
+                    android:layout_centerVertical="true"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/applican_question_onclick3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/applican_question_tex3"
+                    android:gravity="center|right"
+                    >
+                    <TextView
+                        android:id="@+id/applican_question_text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="请选择"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center|right"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="8dip"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_down"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_0.5"
+                android:background="@color/fengexian_color"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                ></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:visibility="visible"
+                >
+                <TextView
+                    android:id="@+id/applican_question_tex4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名下房产类型"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_gray_color"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dip"
+                    android:layout_centerVertical="true"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/applican_question_onclick4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/applican_question_tex4"
+                    android:gravity="center|right"
+                    >
+                    <TextView
+                        android:id="@+id/applican_question_text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="请选择"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center|right"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="8dip"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_down"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_0.5"
+                android:background="@color/fengexian_color"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                ></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:visibility="visible"
+                >
+                <TextView
+                    android:id="@+id/applican_question_tex5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="名下是否有车"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_gray_color"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dip"
+                    android:layout_centerVertical="true"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/applican_question_onclick5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/applican_question_tex5"
+                    android:gravity="center|right"
+                    >
+                    <TextView
+                        android:id="@+id/applican_question_text5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="请选择"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center|right"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="8dip"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_down"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_0.5"
+                android:background="@color/fengexian_color"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                ></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:visibility="visible"
+                >
+                <TextView
+                    android:id="@+id/applican_question_tex6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您的信用情况"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_gray_color"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dip"
+                    android:layout_centerVertical="true"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/applican_question_onclick6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@id/applican_question_tex6"
+                    android:gravity="center|right"
+                    >
+                    <TextView
+                        android:id="@+id/applican_question_text6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="请选择"
+                        android:textSize="@dimen/textSize12sp"
+                        android:textColor="@color/text_gray_color"
+                        android:gravity="center|right"
+                        android:paddingLeft="15dip"
+                        android:paddingRight="8dip"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_down"
+                        android:layout_gravity="center_vertical"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_0.5"
+                android:background="@color/fengexian_color"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                ></View>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:orientation="horizontal"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                >
+
+
+                <TextView
+                    android:id="@+id/applican_question_tex7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="年龄"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_gray_color"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="4dip"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/applican_question_yuan_text11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="岁"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/text_gray_color"
+                    android:textSize="@dimen/textSize12sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+                <EditText
+                    android:id="@+id/applican_question_text7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="请输入"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_gray_color"
+                    android:gravity="center|right"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="8dip"
+                    android:layout_toRightOf="@id/applican_question_tex7"
+                    android:layout_toLeftOf="@id/applican_question_yuan_text11"
+                    android:inputType="number"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_0.5"
+                android:background="@color/fengexian_color"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                ></View>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
+</LinearLayout>

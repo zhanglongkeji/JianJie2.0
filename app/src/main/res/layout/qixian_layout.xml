@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dip"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+        <TextView
+            android:id="@+id/qixian_layout_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="不限"
+            android:textColor="@color/text_gray_color"
+            android:textSize="@dimen/textSize12sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_0.5"
+        android:background="@color/fengexian_color"
+        ></View>
+
+</LinearLayout>

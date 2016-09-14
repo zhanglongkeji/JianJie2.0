@@ -5,9 +5,23 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
+
     <include layout="@layout/my_actionbar"></include>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/mytouming_cungt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/my_touming_ceng"
+            android:scaleType="fitXY"
+            />
+
     <LinearLayout
+        android:id="@+id/zhinengpp_mycounglayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -59,7 +73,8 @@
                         android:textSize="@dimen/textSize12sp"
                         />
 
-                    <EditText
+                    <TextView
+                        android:id="@+id/zhinengpp_fragment_shurumoney"
                         android:layout_width="match_parent"
                         android:layout_height="30dip"
                         android:background="@null"
@@ -107,6 +122,7 @@
                     />
 
                 <RelativeLayout
+                    android:id="@+id/zhinengpp_qixian_relayout"
                     android:layout_width="match_parent"
                     android:layout_height="35dip"
                     android:orientation="horizontal"
@@ -126,6 +142,7 @@
                         />
 
                     <TextView
+                        android:id="@+id/zhinengpp_qixian_textval"
                         android:layout_width="match_parent"
                         android:layout_height="30dip"
                         android:background="@null"
@@ -136,6 +153,7 @@
                         android:layout_toLeftOf="@id/zhineng_yuantext_month"
                         android:layout_centerVertical="true"
                         android:gravity="center"
+                        android:text="不限"
                         />
 
                 </RelativeLayout>
@@ -145,27 +163,193 @@
         </LinearLayout>
 
 
+        <!-- <com.zlkj.jianjie.myview.DropDownMenu
+             android:id="@+id/zhinengpp_dropdowenu"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:ddmenuTextSize="@dimen/textSize12sp"
+             app:ddtextUnselectedColor="@color/text_blanck_color"
+             app:ddtextSelectedColor="@color/text_blue_color"
+             app:dddividerColor="@color/text_gray_color"
+             app:ddunderlineColor="@color/bg"
+             app:ddmenuSelectedIcon="@mipmap/location_down"
+             app:ddmenuUnselectedIcon="@mipmap/location_down"
+             app:ddmenuBackgroundColor="@color/white"
+             app:ddmaskColor="@color/text_red_color"
+             ></com.zlkj.jianjie.myview.DropDownMenu>-->
+
         <LinearLayout
+            android:id="@+id/zhinengpp_xuanzecount_layout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
+            android:layout_height="48dip"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:background="@color/white"
             >
-            <com.zlkj.jianjie.myview.DropDownMenu
-                android:id="@+id/zhinengpp_dropdowenu"
+            <LinearLayout
+                android:id="@+id/zhinengpp_ywxiyk"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:ddmenuTextSize="@dimen/textSize12sp"
-                app:ddtextUnselectedColor="@color/text_blanck_color"
-                app:ddtextSelectedColor="@color/text_blue_color"
-                app:dddividerColor="@color/text_gray_color"
-                app:ddunderlineColor="@color/bg"
-                app:ddmenuSelectedIcon="@mipmap/location_down"
-                app:ddmenuUnselectedIcon="@mipmap/location_down"
-                app:ddmaskColor="@color/mask_color"
-                app:ddmenuBackgroundColor="@color/white"
-                ></com.zlkj.jianjie.myview.DropDownMenu>
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0.97"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/zhinengpp_ywxyk_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有无信用卡"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_blanck_color"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/location_down"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dip"
+                    />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/space_0.5"
+                android:layout_height="match_parent"
+                android:background="@color/text_blue_color"
+                android:layout_marginTop="12dip"
+                android:layout_marginBottom="12dip"
+                ></View>
+
+            <LinearLayout
+                android:id="@+id/zhinengpp_hkfs_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0.97"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/zhinengpp_hkfs_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="还款方式"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_blanck_color"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/location_down"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dip"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/space_0.5"
+                android:layout_height="match_parent"
+                android:background="@color/text_blue_color"
+                android:layout_marginTop="12dip"
+                android:layout_marginBottom="12dip"
+                ></View>
+
+            <LinearLayout
+                android:id="@+id/zhinengpp_mrpx_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0.97"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <TextView
+                    android:id="@+id/zhinengpp_morempx_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="默认排序"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_blanck_color"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/location_down"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dip"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/space_0.5"
+                android:layout_height="match_parent"
+                android:background="@color/text_blue_color"
+                android:layout_marginTop="12dip"
+                android:layout_marginBottom="12dip"
+                ></View>
+
+            <LinearLayout
+                android:id="@+id/zhinengpp_shaix_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1.09"
+                android:layout_gravity="center"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="筛选"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_blanck_color"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/location_down"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="4dip"
+                    />
+
+            </LinearLayout>
 
         </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_10"
+            android:background="@color/bg"
+            ></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/zhinengpp_touming_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/my_touming_ceng"
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                />
 
         <com.zlkj.jianjie.myview.PullToRefreshView
             android:id="@+id/zhinengpp_pulltoresreshview"
@@ -204,11 +388,11 @@
 
         </com.zlkj.jianjie.myview.PullToRefreshView>
 
-
-
+        </RelativeLayout>
 
 
     </LinearLayout>
 
+    </RelativeLayout>
 
 </LinearLayout>

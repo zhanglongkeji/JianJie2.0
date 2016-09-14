@@ -4,7 +4,10 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="mask_color">#00FFFFFF</color>
+
+    <color name="mask_color">#35101010</color>
+
+
     <color name="drop_down_selected">#7B1FA2</color>
     <color name="drop_down_unselected">#111111</color>
     <color name="check_bg">#f2f2f2</color>
@@ -57,5 +60,19 @@
     <!-- 全透明色 -->
     <color name="All_transparent">#00FFFFFF</color>
 
+
+    <color name="default_menu_back">#f1f1f1</color>
+    <color name="default_menu_press_back">#fafafa</color>
+    <color name="default_menu_press_text">#000000</color>
+    <color name="default_menu_text">#00cf9b</color>
+    <color name="divider">#f1f1f1</color>
+
+
+    <color name="gray">#999999</color>
+    <color name="blue">#00a5ec</color>
+    <color name="red">#ff3b30</color>
+    <color name="green">#4dd363</color>
+    <color name="oval_no">#ededed</color>
+    <color name="oval_yes">#cdcdcd</color>
 
 </resources>

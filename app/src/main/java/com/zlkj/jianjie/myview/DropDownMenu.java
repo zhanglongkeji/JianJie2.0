@@ -8,10 +8,12 @@ import android.util.AttributeSet;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -53,6 +55,8 @@ public class DropDownMenu extends LinearLayout {
     //tab未选中图标
     private int menuUnselectedIcon;
 
+    private View mycountView;
+    private TextView mytext;
 
     public DropDownMenu(Context context) {
         super(context, null);
@@ -98,6 +102,7 @@ public class DropDownMenu extends LinearLayout {
 
         //初始化containerView并将其添加到DropDownMenu
         containerView = new FrameLayout(context);
+        containerView.bringToFront();
         containerView.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT));
         addView(containerView, 2);
         containerView.setVisibility(GONE);
@@ -125,6 +130,7 @@ public class DropDownMenu extends LinearLayout {
         maskView = new View(getContext());
         maskView.setLayoutParams(new FrameLayout.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT, FrameLayout.LayoutParams.MATCH_PARENT));
         maskView.setBackgroundColor(maskColor);
+
         maskView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -139,33 +145,61 @@ public class DropDownMenu extends LinearLayout {
         containerView.addView(popupMenuViews, 2);
 
         for (int i = 0; i < popupViews.size(); i++) {
-            popupViews.get(i).setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+            popupViews.get(i).setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
             popupMenuViews.addView(popupViews.get(i), i);
         }
+
 
     }
 
     private void addTab(@NonNull List<String> tabTexts, int i) {
-        final TextView tab = new TextView(getContext());
-        tab.setSingleLine();
-        tab.setEllipsize(TextUtils.TruncateAt.END);
-        tab.setGravity(Gravity.CENTER);
-        tab.setTextSize(TypedValue.COMPLEX_UNIT_PX,menuTextSize);
-        tab.setLayoutParams(new LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1.0f));
-        tab.setTextColor(textUnselectedColor);
-        tab.setCompoundDrawablesWithIntrinsicBounds(null, null, getResources().getDrawable(menuUnselectedIcon), null);
-        tab.setText(tabTexts.get(i));
-        tab.setPadding(dpTpPx(8), dpTpPx(12),dpTpPx(8), dpTpPx(12));
+
+
+       mycountView= LayoutInflater.from(getContext()).inflate(R.layout.show_popu_linlayout,null);
+
+        mycountView.findViewById(R.id.iv_menu_arrow2).setBackgroundResource(menuUnselectedIcon);
+
+
+       // dview.setLayoutParams(new LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 0.8f));
+
+        mytext = (TextView) mycountView.findViewById(R.id.tv_menu_title2);
+        mytext.setSingleLine();
+        mytext.setEllipsize(TextUtils.TruncateAt.END);
+        mytext.setGravity(Gravity.CENTER);
+        mytext.setTextSize(TypedValue.COMPLEX_UNIT_PX,menuTextSize);
+
+        if(i==3){
+            mycountView.setLayoutParams(new LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 0.8f));
+        }else {
+            mycountView.setLayoutParams(new LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1.2f));
+        }
+
+        mytext.setTextColor(textUnselectedColor);
+
+       // tab.setCompoundDrawablesWithIntrinsicBounds(null, null, getResources().getDrawable(menuUnselectedIcon), null);
+       // tab.setPadding(0,0,-20,0);
+
+        mytext.setText(tabTexts.get(i));
+
+        if(i==3){
+
+        }else {
+           // tab.setPadding(dpTpPx(8), dpTpPx(12), dpTpPx(8), dpTpPx(12));
+        }
         //添加点击事件
-        tab.setOnClickListener(new OnClickListener() {
+        mycountView.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 containerView.setVisibility(VISIBLE);
-                switchMenu(tab);
+                switchMenu(mycountView);
             }
         });
 
-        tabMenuView.addView(tab);
+        tabMenuView.setGravity(Gravity.CENTER);
+
+        tabMenuView.addView(mycountView);
+
+
         //添加分割线
         if (i < tabTexts.size() - 1) {
             TextView view = new TextView(getContext());
@@ -200,9 +234,10 @@ public class DropDownMenu extends LinearLayout {
      */
     public void closeMenu() {
         if (current_tab_position != -1) {
-            ((TextView) tabMenuView.getChildAt(current_tab_position)).setTextColor(textUnselectedColor);
-            ((TextView) tabMenuView.getChildAt(current_tab_position)).setCompoundDrawablesWithIntrinsicBounds(null, null,
-                    getResources().getDrawable(menuUnselectedIcon), null);
+
+            ((TextView) tabMenuView.getChildAt(current_tab_position).findViewById(R.id.tv_menu_title2)).setTextColor(textUnselectedColor);
+            ((ImageView) tabMenuView.getChildAt(current_tab_position).findViewById(R.id.iv_menu_arrow2)).setBackgroundResource(menuUnselectedIcon);
+
             popupMenuViews.setVisibility(View.GONE);
            // popupMenuViews.setAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.dd_menu_out));
             maskView.setVisibility(GONE);
@@ -237,23 +272,28 @@ public class DropDownMenu extends LinearLayout {
                 } else {
                     if (current_tab_position == -1) {
                         popupMenuViews.setVisibility(View.VISIBLE);
+                       // popupMenuViews.bringToFront();
                         popupMenuViews.setAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.dd_menu_in));
-                        maskView.setVisibility(VISIBLE);
-                        maskView.setAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.dd_mask_in));
+                       // maskView.setVisibility(VISIBLE);
+                       // maskView.setAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.dd_mask_in));
                         popupMenuViews.getChildAt(i / 2).setVisibility(View.VISIBLE);
+
                     } else {
+
                         popupMenuViews.getChildAt(i / 2).setVisibility(View.VISIBLE);
+
                     }
                     current_tab_position = i;
-                    ((TextView) tabMenuView.getChildAt(i)).setTextColor(textSelectedColor);
+                    ((TextView) tabMenuView.getChildAt(i).findViewById(R.id.tv_menu_title2)).setTextColor(textSelectedColor);
 
-                    ((TextView) tabMenuView.getChildAt(i)).setCompoundDrawablesWithIntrinsicBounds(null, null,
-                            getResources().getDrawable(menuSelectedIcon), null);
+                    ((ImageView) tabMenuView.getChildAt(i).findViewById(R.id.iv_menu_arrow2)).setBackgroundResource(menuSelectedIcon);
+
                 }
             } else {
-                ((TextView) tabMenuView.getChildAt(i)).setTextColor(textUnselectedColor);
-                ((TextView) tabMenuView.getChildAt(i)).setCompoundDrawablesWithIntrinsicBounds(null, null,
-                        getResources().getDrawable(menuUnselectedIcon), null);
+                ((TextView) tabMenuView.getChildAt(i).findViewById(R.id.tv_menu_title2)).setTextColor(textUnselectedColor);
+               ((ImageView) tabMenuView.getChildAt(i).findViewById(R.id.iv_menu_arrow2)).setBackgroundResource(menuUnselectedIcon);
+                      // setCompoundDrawablesWithIntrinsicBounds(null, null,
+                      // getResources().getDrawable(menuUnselectedIcon), null);
                 popupMenuViews.getChildAt(i / 2).setVisibility(View.GONE);
             }
         }

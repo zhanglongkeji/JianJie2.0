@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/my_actionbar"></include>
+
+
+    <com.zlkj.jianjie.myview.PullToRefreshView
+        android:id="@+id/account_details_pulltorefreshview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/text_blue_color"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="100dip"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="账户余额"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize14sp"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1286.68元"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize23sp"
+                            android:layout_marginTop="5dip"
+                            />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_0.5"
+                        android:background="@color/white"
+                        android:layout_marginLeft="12dip"
+                        android:layout_marginRight="12dip"
+                        ></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dip"
+                        android:orientation="horizontal"
+                        android:weightSum="3"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1366"
+                                android:textSize="@dimen/textSize14sp"
+                                android:textColor="@color/white"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="注册人数"
+                                android:textSize="@dimen/textSize14sp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="5dip"
+                                />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/space_0.5"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:layout_marginTop="12dip"
+                            android:layout_marginBottom="12dip"
+                            ></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1366"
+                                android:textSize="@dimen/textSize14sp"
+                                android:textColor="@color/white"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="借款人数"
+                                android:textSize="@dimen/textSize14sp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="5dip"
+                                />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/space_0.5"
+                            android:layout_height="match_parent"
+                            android:background="@color/white"
+                            android:layout_marginTop="12dip"
+                            android:layout_marginBottom="12dip"
+                            ></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="666.32"
+                                android:textSize="@dimen/textSize14sp"
+                                android:textColor="@color/white"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="累计收入(元)"
+                                android:textSize="@dimen/textSize14sp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="5dip"
+                                />
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:orientation="horizontal"
+                        android:weightSum="4"
+                        >
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:button="@null"
+                            android:text="全部"
+                            android:textColor="@color/tab_text_font2"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:drawableBottom="@drawable/tab_accountdetails"
+
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:button="@null"
+                            android:text="邀请"
+                            android:textColor="@color/tab_text_font2"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:drawableBottom="@drawable/tab_accountdetails"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:button="@null"
+                            android:text="琅琊榜"
+                            android:textColor="@color/tab_text_font2"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:drawableBottom="@drawable/tab_accountdetails"
+                            />
+                        <RadioButton
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:button="@null"
+                            android:text="提现"
+                            android:textColor="@color/tab_text_font2"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:drawableBottom="@drawable/tab_accountdetails"
+                            />
+
+                    </RadioGroup>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_0.5"
+                        android:background="@color/fengexian_color"
+                        ></View>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        >
+                        <com.zlkj.jianjie.myview.MyListView
+                            android:id="@+id/account_details_mylistinfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:listSelector="#00000000"
+                            android:cacheColorHint="#00000000"
+                            android:divider="@null"
+                            android:scrollbars="none"
+                            android:dividerHeight="@null"
+                            ></com.zlkj.jianjie.myview.MyListView>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </com.zlkj.jianjie.myview.PullToRefreshView>
+
+
+</LinearLayout>

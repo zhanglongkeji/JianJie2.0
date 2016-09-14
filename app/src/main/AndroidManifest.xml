@@ -52,9 +52,23 @@
 
 
 
-        <activity android:name="com.zlkj.jianjie.activity.HomeMainActivity"></activity>
+        <activity android:name="com.zlkj.jianjie.activity.HomeMainActivity" android:screenOrientation="portrait"></activity>
 
 
+        <!-- 完善申请信息 -->
+        <activity android:name="com.zlkj.jianjie.activity.AddMyInfoActivity" android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            ></activity>
+
+        <!-- 申请人资历 -->
+        <activity android:name="com.zlkj.jianjie.activity.ApplicanQuestionActivity" android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            ></activity>
+
+        <!-- 登录-->
+        <activity android:name="com.zlkj.jianjie.activity.LoginActivity" android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            ></activity>
 
     </application>
 

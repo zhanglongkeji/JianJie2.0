@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.view.ViewGroup.LayoutParams;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.PopupWindow;
@@ -32,8 +33,10 @@ public class MyPopupWindows extends PopupWindow {
 		// 设置SelectPicPopupWindow弹出窗体的高
 		this.setHeight(LayoutParams.WRAP_CONTENT);
 		this.setContentView(mview);
+		//防止虚拟软键盘被弹出菜单遮住
 
 		this.setFocusable(true);
+		this.setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_ADJUST_RESIZE);
 		this.setBackgroundDrawable(new BitmapDrawable());
 		
 		

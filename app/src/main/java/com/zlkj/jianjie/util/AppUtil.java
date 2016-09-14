@@ -166,7 +166,7 @@ public class AppUtil {
 
 
     //创建一个Dialog
-    public static Dialog newDialong(View relayoutview, Context context, int syle){
+    public static Dialog newDialong(Context context,View relayoutview, int syle){
         Dialog dialog=new Dialog(context,syle);
         dialog.setCanceledOnTouchOutside(true);
         dialog.setCancelable(true);

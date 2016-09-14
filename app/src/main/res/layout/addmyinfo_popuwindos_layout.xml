@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/qixan_close_popuwindos"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+
+
+        <com.zlkj.jianjie.myview.MyListView
+            android:id="@+id/addpopuwindos_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="#00000000"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:dividerHeight="@null"
+            >
+        </com.zlkj.jianjie.myview.MyListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_8"
+            android:background="@color/bg"
+            android:visibility="visible"
+            ></View>
+
+        <LinearLayout
+            android:id="@+id/addinfo_popuwindos_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="45dip"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            >
+            <TextView
+                android:id="@+id/qixian_layout_canceltext"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="取消"
+                android:textColor="@color/text_blanck_color"
+                android:textSize="@dimen/textSize12sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

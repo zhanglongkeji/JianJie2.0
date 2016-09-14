@@ -3,6 +3,8 @@ package com.zlkj.jianjie.util;
 import android.app.Application;
 import android.content.Context;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
+
 
 public class MyApplication extends Application
 {
@@ -29,16 +31,22 @@ public class MyApplication extends Application
 
     public static AppCache appCache;
 
+
+
     @Override
     public void onCreate()
     {
 
        // Global.setApplicationContext(this);
+        //Fresco.initialize(instance);
+
         
         super.onCreate();
 
+
         mContext = this;
         appCache = new AppCache(mContext);
+        Fresco.initialize(mContext);
 
     }
 

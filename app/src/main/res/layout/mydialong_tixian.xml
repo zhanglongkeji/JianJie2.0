@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/yuanjiao_img_white"
+    android:layout_gravity="center"
+    android:layout_marginLeft="15dip"
+    android:layout_marginRight="15dip"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:orientation="horizontal"
+            android:background="@drawable/yuanjiao_danblue"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="15dip"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/personal_yjfk"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入姓名"
+                android:textSize="@dimen/textSize12sp"
+                android:textColor="@color/text_blanck_color"
+                android:paddingLeft="7dip"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:orientation="horizontal"
+            android:background="@drawable/yuanjiao_danblue"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="10dip"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/personal_yjfk"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入支付宝账户"
+                android:textSize="@dimen/textSize12sp"
+                android:textColor="@color/text_blanck_color"
+                android:paddingLeft="7dip"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:orientation="horizontal"
+            android:background="@drawable/yuanjiao_danblue"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="10dip"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/personal_yjfk"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dip"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="请输入手机号"
+                android:textSize="@dimen/textSize12sp"
+                android:textColor="@color/text_blanck_color"
+                android:paddingLeft="7dip"
+                android:layout_gravity="center|left"
+                android:gravity="center|left"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:orientation="horizontal"
+            android:layout_marginLeft="12dip"
+            android:layout_marginRight="12dip"
+            android:layout_marginTop="10dip"
+            android:weightSum="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@drawable/yuanjiao_danblue"
+                android:layout_weight="0.3"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/personal_yjfk"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dip"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="请输入验证码"
+                    android:textSize="@dimen/textSize12sp"
+                    android:textColor="@color/text_blanck_color"
+                    android:paddingLeft="7dip"
+                    android:layout_gravity="center|left"
+                    android:gravity="center|left"
+                    android:layout_marginRight="7dip"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="获取验证码"
+                android:background="@drawable/yuanjiao_scrollview_blue"
+                android:layout_weight="0.7"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize12sp"
+                android:layout_marginLeft="7dip"
+                android:layout_marginTop="3dip"
+                android:layout_marginBottom="3dip"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="15dip"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/homepage_listitem_djs"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请填写完整资料"
+                android:textSize="@dimen/textSize12sp"
+                android:textColor="@color/text_red_color"
+                android:layout_marginLeft="4dip"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:text="确定提现"
+            android:textSize="@dimen/textSize14sp"
+            android:background="@drawable/yuanjiao_scrollview_blue"
+            android:gravity="center"
+            android:layout_marginTop="12dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:textColor="@color/white"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

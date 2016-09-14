@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dip"
+        android:orientation="vertical"
+        android:background="@mipmap/dialog_password_bg"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+
+
+        <TextView
+            android:id="@+id/myaccount_details_dialong_btnok"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/yuanjiao_blue_scrol"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginBottom="10dip"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize15sp"
+            android:gravity="center"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_above="@id/myaccount_details_dialong_btnok"
+            android:layout_marginBottom="8dip"
+            >
+            <TextView
+                android:id="@+id/mydialong_titileinfos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="琅琊榜收入"
+                android:textSize="@dimen/textSize14sp"
+                android:textColor="@color/text_blanck_color"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="18dip"
+                />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <com.zlkj.jianjie.myview.MyListView
+                        android:id="@+id/myaccount_details_dialog_mylistview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:divider="@null"
+                        android:dividerHeight="@null"
+                        android:listSelector="#00000000"
+                        android:background="#00000000"
+                        android:cacheColorHint="#00000000"
+                        android:layout_marginTop="8dip"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        ></com.zlkj.jianjie.myview.MyListView>
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
